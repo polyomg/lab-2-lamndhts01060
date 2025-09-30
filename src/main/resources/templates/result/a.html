@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <!-- Trường hợp /b: lấy từ Model -->
+    <h1 th:text="${message}"></h1>
+
+    <!-- Trường hợp /c: lấy từ param khi redirect -->
+    <h1 th:text="${param.message}"></h1>
+</body>
+</html>
