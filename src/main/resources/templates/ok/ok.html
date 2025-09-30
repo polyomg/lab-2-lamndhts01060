@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form OK</title>
+</head>
+<body>
+    <h2>Chọn một nút</h2>
+    <form action="/ctrl/ok" method="post">
+        <button>OK 1</button>
+    </form>
+
+    <form action="/ctrl/ok2" method="get">
+        <button>OK 2</button>
+    </form>
+
+    <form action="/ctrl/ok/24" method="post">
+        <button>OK 3</button>
+    </form>
+
+    <h3>Kết quả:</h3>
+    <p th:text="${message}"></p>
+</body>
+</html>
